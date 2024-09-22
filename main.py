@@ -8,15 +8,15 @@ import pickle
 app = Flask(__name__)
 
 # Load dataset
-sym_des = pd.read_csv(r"C:\Users\Admin\Desktop\html\Medical-recommendiation-system\symtoms_df.csv")
-precautions = pd.read_csv(r'C:\Users\Admin\Desktop\html\Medical-recommendiation-system\precautions_df.csv')
-workout = pd.read_csv(r'C:\Users\Admin\Desktop\html\Medical-recommendiation-system\workout_df.csv')
-description = pd.read_csv(r'C:\Users\Admin\Desktop\html\Medical-recommendiation-system\description.csv')
-medications = pd.read_csv(r'C:\Users\Admin\Desktop\html\Medical-recommendiation-system\medications.csv')
-diets = pd.read_csv(r'C:\Users\Admin\Desktop\html\Medical-recommendiation-system\diets.csv')
+sym_des = pd.read_csv(r"C:\Users\siddh\OneDrive\Desktop\web\medical2\symtoms_df.csv")
+precautions = pd.read_csv(r'C:\Users\siddh\OneDrive\Desktop\web\medical2\precautions_df.csv')
+workout = pd.read_csv(r'C:\Users\siddh\OneDrive\Desktop\web\medical2\workout_df.csv')
+description = pd.read_csv(r'C:\Users\siddh\OneDrive\Desktop\web\medical2\description.csv')
+medications = pd.read_csv(r'C:\Users\siddh\OneDrive\Desktop\web\medical2\medications.csv')
+diets = pd.read_csv(r'C:\Users\siddh\OneDrive\Desktop\web\medical2\diets.csv')
 
 # Load model
-svc = pickle.load(open(r'C:\Users\Admin\Desktop\html\Medical-recommendiation-system\svc.pkl', 'rb'))
+svc = pickle.load(open(r'C:\Users\siddh\OneDrive\Desktop\web\medical2\svc.pkl', 'rb'))
 
 # Helper functions
 def helper(dis):

@@ -66,6 +66,7 @@ html {
     transform: scale(var(--s, 1)) perspective(600px) rotateX(var(--rx, 0deg)) rotateY(var(--ry, 0deg));
     transition: transform 0.1s, box-shadow 0.3s, padding 0.3s;
     perspective: 600px;
+    text-decoration: none;
 }
 
 .bs:hover {
